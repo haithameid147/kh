@@ -56,7 +56,7 @@ import { FooterComponent } from './pages/footer/footer.component'
 
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FormsModule,
     HttpClientModule,

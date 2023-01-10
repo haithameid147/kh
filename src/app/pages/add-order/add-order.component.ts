@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Meta } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { City, Orders, Services } from 'src/app/_modules/allModules';
 import { CityDataService } from 'src/app/_services/city-data.service';
@@ -23,10 +24,13 @@ export class AddOrderComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private servicedata: SeviceDataService,
-    private cityDataService : CityDataService
+    private cityDataService : CityDataService,
+    private meta : Meta
   ) { }
 
   ngOnInit(): void {
+   // this.title.setTitle("dsfdf");
+    this.meta.addTag({name:'describsion',content:'haitham muhamad eid '})
     this.servicedata.getAllServices().subscribe(
       response => {
         this.service = response ;

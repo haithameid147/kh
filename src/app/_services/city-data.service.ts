@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { City } from '../_modules/allModules';
+// kdsfoiahsdfoiheifhepihweiop
 //https://filkhedmaa.herokuapp.com/
  // https://khdmat.herokuapp.com/
 export class cityBean {
@@ -15,9 +16,10 @@ export class cityBean {
 export class CityDataService{
   requestHeader = new HttpHeaders({ 'No-Auth': 'True' });
 // PATH_OF_API = 'https://fekhedmatikk.herokuapp.com';
-PATH_OF_API = 'https://khdmat.herokuapp.com';
+//PATH_OF_API = 'https://khdmat.herokuapp.com';
+//PATH_OF_API  = 'https://main-production-9975.up.railway.app'
+PATH_OF_API = 'http://localhost:8086';
 
-//  PATH_OF_API = 'http://localhost:8086';
  constructor(private http: HttpClient) { }
 
   // createBasicAuthanticationHTTPHeader() {

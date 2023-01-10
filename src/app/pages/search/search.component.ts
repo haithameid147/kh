@@ -29,6 +29,7 @@ export class SearchComponent implements OnInit {
     public userService: UserService) { }
   ngOnInit(): void {
      var staticServicee: Array<Services> = [
+      { id: 0, name: "كل الخدمات" },
       { id: 1, name: "نظافة" },
       { id: 2, name: "نجار" },
       { id: 3, name: "سباك" }
@@ -36,9 +37,10 @@ export class SearchComponent implements OnInit {
      this.staticService = staticServicee
 
      var staticCity1: Array<City> = [
-      { id: 1, nameAr: "القاهره",nameEn: "cairo" },
-      { id: 2, nameAr: "الاسكندرية",nameEn:"alex" },
-      { id: 3, nameAr: "طنطا",nameEn:"tanta" }
+      { id: 0, nameAr: "كل المدن",nameEn: "cairo" },
+      { id: 1, nameAr: "الرياض",nameEn: "cairo" },
+      { id: 2, nameAr: "مكة",nameEn:"alex" },
+      { id: 3, nameAr: "الدوادمي",nameEn:"tanta" }
     ];
        this.staticCity = staticCity1
 

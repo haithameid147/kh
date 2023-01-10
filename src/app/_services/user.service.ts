@@ -8,9 +8,9 @@ import { UserAuthService } from './user-auth.service';
 })
 export class UserService {
 // PATH_OF_API = 'https://fekhedmatikk.herokuapp.com';
-PATH_OF_API = 'https://khdmat.herokuapp.com';
-
-//PATH_OF_API = 'http://localhost:8086';
+//PATH_OF_API = 'https://khdmat.herokuapp.com';
+//PATH_OF_API  = 'https://main-production-9975.up.railway.app'
+PATH_OF_API = 'http://localhost:8086';
 
   requestHeader = new HttpHeaders({ 'No-Auth': 'True' });
   constructor(
